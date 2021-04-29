@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Meta Information-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--Bootstrap CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!--Custom CSS-->
+<link rel="stylesheet" href="styles.css">
+
+<!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+<!--Logo on tab-->
+<link rel="icon" href="imgs/icon.png">
+
+<title>Caesar</title>
+</head>
+
+<body>
+<!--Section 1 start-->
+<section id="intro" class="container">
+    <div class="row justify-content-center p-3">
+        <h2 id="heading">Caesar Cipher</h2>
+        <p>In cryptography, a Caesar cipher, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.</p>
+    </div>
+</section>
+
+<!--Section 1 end-->
+
+<!--Section 2 start-->
+<section class="container">
+    <div class="row align-items-center text-center">
+        <div id="input" class="col-lg-5 py-3">
+            <div id="form">
+                <form>
+                    <div class="form-group">
+                        <label for="cipher">Select the cipher</label>
+                        <select name="cipher" id="cipher" class="form-control-sm">
+                            <option selected value="Caesar">Caesar</option>
+                            <option value="affine">Affine</option>
+                            <option value="baconian">Baconian</option>
+                            <option value="vigenere">Vienere</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="k-size">Enter the k parameter value</label>
+                        <input type="text" class="form-control-sm" id="k-size" placeholder="e.g. 5">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-text">Enter the text</label><br>
+                        <textarea name="input-text" id="input-text" cols="30" rows="10" class="form-control-sm"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <select name="encrypt-decrypt" id="encrypt-decrypt" class="form-control-sm">
+                            <option selected value="empty">Choose...</option>
+                            <option value="encrypt">Encrypt</option>
+                            <option value="decrypt">Decrypt</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="button" class="col-lg-2">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <img src="imgs/arrow.png" alt="arrow" class="img-fluid d-none d-lg-inline">
+                    <button id="btn" type="button" class="btn btn-outline-dark">Transform</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="output" class="col-lg-5">
+            Result
+        </div>
+    </div>
+</section>
+<!--Section 2 end-->
+
+<!--Custom Scripts-->
+<script src="scripts.js"></script>
+
+<!--jQuery Popper and bootstrap scripts-->
+<!--Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--Popper-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!--Bootstrap script-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

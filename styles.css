@@ -1,0 +1,33 @@
+body{
+    font-family: 'Special Elite', cursive;
+    background-image: url("imgs/caesar-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: center;
+}
+
+.container{
+    margin-top: 20px;
+}
+
+#intro{
+    width:50%;
+    background-color: #dedede;
+    border-radius: 20px;
+    border:solid black 2px;
+}
+
+#output{
+    background-color: #dedede;
+    border-radius: 20px;
+    border:solid black 2px;
+}
+
+#intro p{
+    text-align: justify;
+}
+
+#input{
+    border-radius: 50px;
+}
